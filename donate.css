@@ -1,0 +1,154 @@
+/* donate.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e9ecef; /* Light grayish blue background */
+    color: #212529; /* Dark grayish text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: #0d6efd; /* Bright blue header text */
+}
+
+.header p {
+    font-size: 1rem;
+    color: #495057; /* Soft gray text */
+    margin-top: 10px;
+}
+
+.donation-options {
+    margin-bottom: 20px;
+}
+
+.donation-options h2 {
+    font-size: 1.2rem;
+    color: #0d6efd; /* Bright blue subheading */
+    margin-bottom: 10px;
+}
+
+.donation-options ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.donation-options li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #212529; /* Dark grayish black text */
+    padding: 5px;
+    background-color: #f8f9fa; /* Very light gray background for contrast */
+    border-radius: 5px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057; /* Soft gray labels */
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f8f9fa; /* Light gray background for inputs */
+    color: #212529; /* Dark text inside inputs */
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.submit-button button {
+    background-color: #0d6efd; /* Bright blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button button:hover {
+    background-color: #0b5ed7; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.thank-you-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #212529; /* Dark text */
+}
+
+.thank-you-message h2 {
+    color: #0d6efd; /* Bright blue heading */
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #495057; /* Soft gray text */
+}
+
+.contact-info a {
+    color: #0d6efd; /* Bright blue links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0b5ed7; /* Slightly darker blue on hover */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #212529; /* Dark grayish black button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-container button:hover {
+    background-color: #0d6efd; /* Blue on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}

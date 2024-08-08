@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sustainable.css">
+    <title>Nexus Bloom | Sustainable Products</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="homepage.html" class="nav-link">Home</a></li>
+                <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+                <li><a href="donate.html" class="nav-link">Donate</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+                <li class="basket">
+                    <img src="basket.png" alt="Basket Icon">
+                    <span>Basket: </span><span id="basket-count">0</span> items
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <h2>Filter Products</h2>
+            <div class="filter-group">
+                <label for="type">Type:</label>
+                <select id="type">
+                    <option value="all">All</option>
+                    <option value="recycled">Recycled</option>
+                    <option value="organic">Organic</option>
+                    <option value="upcycled">Upcycled</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price">Price Range:</label>
+                <select id="price">
+                    <option value="all">All</option>
+                    <option value="0-50">Under $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-200">$100 - $200</option>
+                    <option value="200+">Over $200</option>
+                </select>
+            </div>
+        </aside>
+
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="photo" alt="Product 1">
+                <div class="product-details">
+                    <h2>Product 1</h2>
+                    <p class="material">Material: Recycled</p>
+                    <p class="price">$45</p>
+                    <p class="description">A sustainable product made from recycled materials.</p>
+                    <div class="button-group">
+                        <button class="add-to-basket">
+                            <img src="basket.png" alt="Add to Basket Icon"> Add to Basket
+                        </button>
+                        <button class="buy-now">
+                            <img src="buy.png" alt="Buy Now Icon"> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="photo.jpg" alt="Product 2">
+                <div class="product-details">
+                    <h2>Product 2</h2>
+                    <p class="material">Material: Organic</p>
+                    <p class="price">$75</p>
+                    <p class="description">An organic product perfect for eco-friendly living.</p>
+                    <div class="button-group">
+                        <button class="add-to-basket">
+                            <img src="basket.png" alt="Add to Basket Icon"> Add to Basket
+                        </button>
+                        <button class="buy-now">
+                            <img src="buy.png" alt="Buy Now Icon"> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="photo" alt="Product 3">
+                <div class="product-details">
+                    <h2>Product 3</h2>
+                    <p class="material">Material: Upcycled</p>
+                    <p class="price">$55</p>
+                    <p class="description">An upcycled product with a unique design.</p>
+                    <div class="button-group">
+                        <button class="add-to-basket">
+                            <img src="basket.png" alt="Add to Basket Icon"> Add to Basket
+                        </button>
+                        <button class="buy-now">
+                            <img src="buy.png" alt="Buy Now Icon"> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="photo" alt="Product 4">
+                <div class="product-details">
+                    <h2>Product 4</h2>
+                    <p class="material">Material: Recycled</p>
+                    <p class="price">$85</p>
+                    <p class="description">A stylish recycled product for the eco-conscious.</p>
+                    <div class="button-group">
+                        <button class="add-to-basket">
+                            <img src="basket.png" alt="Add to Basket Icon"> Add to Basket
+                        </button>
+                        <button class="buy-now">
+                            <img src="buy.png" alt="Buy Now Icon"> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="back-button">
+            <button onclick="window.location.href='homepage.html'">Back to Home</button>
+        </div>
+    </footer>
+
+    <script>
+        let basketCount = 0;
+
+        function updateBasketCount() {
+            document.getElementById('basket-count').textContent = basketCount;
+        }
+
+        document.querySelectorAll('.add-to-basket').forEach(button => {
+            button.addEventListener('click', () => {
+                basketCount++;
+                updateBasketCount();
+                alert('Product added to basket!');
+            });
+        });
+    </script>
+</body>
+</html>
